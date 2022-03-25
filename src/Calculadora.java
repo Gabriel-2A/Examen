@@ -51,12 +51,16 @@ public class Calculadora {
         return primerValor - segundoValor;
     }
 
-    public double mjultiplicasion(){
+    public double multiplicasion(){
         return primerValor * segundoValor;
     }
 
     public double division(){
-            return primerValor / segundoValor;
+        if((segundoValor == 0)){
+            return 0.0;
+        }
+
+        return primerValor / segundoValor;
     }
 
     public double elevarPotencia(){
@@ -66,8 +70,8 @@ public class Calculadora {
     @Override
     public String toString() {
         if(esCientifica == true) {
-           return "\nLa calculadora es de maraca [" + marca + "] y [es cientifica]";
+           return "La calculadora es de maraca [" + marca + "] y [es cientifica]";
         }else
-            return "\nLa calculadora es de marca [" + marca + "] y [no es cientifica]";
+            return "La calculadora es de marca [" + marca + "] y [no es cientifica]";
     }
 }
