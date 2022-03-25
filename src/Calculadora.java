@@ -40,4 +40,34 @@ public class Calculadora {
     public void setSegundoValor(double segundoValor) {
         this.segundoValor = segundoValor;
     }
+
+
+    //Metodos
+    public double suma(){
+        return primerValor + segundoValor;
+    }
+
+    public double resta(){
+        return primerValor - segundoValor;
+    }
+
+    public double mjultiplicasion(){
+        return primerValor * segundoValor;
+    }
+
+    public double division(){
+            return primerValor / segundoValor;
+    }
+
+    public double elevarPotencia(){
+        return Math.pow(primerValor,segundoValor);
+    }
+
+    @Override
+    public String toString() {
+        if(esCientifica == true) {
+           return "\nLa calculadora es de maraca [" + marca + "] y [es cientifica]";
+        }else
+            return "\nLa calculadora es de marca [" + marca + "] y [no es cientifica]";
+    }
 }
