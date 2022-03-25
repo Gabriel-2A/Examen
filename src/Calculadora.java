@@ -4,6 +4,11 @@ public class Calculadora {
     private double primerValor;
     private double segundoValor;
 
+    public Calculadora(String marca, boolean esCientifica) {
+        this.marca = marca;
+        this.esCientifica = esCientifica;
+    }
+
     public String getMarca() {
         return marca;
     }
